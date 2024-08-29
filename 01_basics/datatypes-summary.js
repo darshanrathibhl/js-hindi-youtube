@@ -35,3 +35,30 @@ let y=null;
 //for reference
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+Stack (Primitive),Heap(Non-Primitive)
+
+//  stack memory me save hua and isliye isme copy me changes hota h
+let youtubeName="hitesh.com"
+let anotherName="youtubeName"
+console.log(youtubeName);
+console.log(anotherName);
+
+// heap memory me save hua isliye reference memory me save hota h
+let userOne={
+    name:"darshan",
+    age:22
+}
+let userTwo=userOne;
+console.log(userOne.name);
+console.log(userTwo.name);
+
+userTwo.name="rathi"
+console.log(userOne.name);
+console.log(userTwo.name);
+
+
+
+
+
